@@ -1,16 +1,46 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Fábrica de software Uniminuto</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-        <link rel="stylesheet" href="estilos.css">
-    </head>
-    <body>
-        <h1>Hola , te amo Juli</h1>s
-        <p> yo amo a mi juli por que ella es mi angelito y el regalo mas bonito que me ha dado Diosito </p>
-    </body>
-    <footer>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="#" />      
+    <link rel="stylesheet" href="estilos.css">	      
 
-    </footer>
+    <!--    particulas   -->
+    <link rel="stylesheet" href="estiloParticulas.css">
+    
+    <title>Fábrica software Uniminuto</title>  
+  </head>
+  <body>
+    <a href="#">
+        <i>
+            <i>
+
+            </i>
+        </i>
+        <span>Botón</span>
+    </a>
+
+    <script>
+        let btn = document.querySelector('a');
+        btn.addEventListener('mousemove' , e => {
+            let rect = e.target.getBoundingClientRect();
+            let x = e.clientX * 3 - rect.left;
+            btn.style.setProperty('--x' , x + 'deg');
+        });
+    </script>
+
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+      
+    <script src="jquery.min.js"></script>	 	
+    <script src="popper.js"></script>	 	 	
+    <script src="min.js"></script>   
+     
+    <!--    particulas   -->   
+    <script src="particulas.js"></script>   
+    <script src="plugins/particles/js/lib/stats.js"></script>     
+    <script src="app.js"></script>
+
+  </body>
 </html>
