@@ -1,7 +1,9 @@
+/* Estilos globales */
 html, body {
     height: 100%;
     margin: 0;
     background-color: #040469;
+    overflow: hidden; /* Evitar scroll inesperado */
 }
 
 header, img {
@@ -10,15 +12,17 @@ header, img {
     top: 10px; /* Ajusta la distancia desde la parte superior */
     left: 10px; /* Ajusta la distancia desde la izquierda */
     height: 50px;
-    width: 60px;
+    width: 50px;
 }
 
+/* Contenedor de fondo */
 .background-container {
     position: relative;
     height: 100vh;
     display: flex;
     align-items: center; /* Centrado vertical */
     justify-content: center; /* Centrado horizontal */
+    overflow: hidden; /* Evitar que elementos se desborden */
 }
 
 #particles-js {
@@ -30,6 +34,7 @@ header, img {
     z-index: 1; /* Asegura que las partículas estén detrás del logo */
 }
 
+/* Estilos del botón */
 .mi-boton {
     position: relative;
     width: 200px;
@@ -40,7 +45,7 @@ header, img {
     border-radius: 20px; /* Bordes redondeados */
     border: none;
     outline: none;
-    background-color: transparent; /* Fondo oscuro */
+    background-color: transparent; /* Fondo transparente */
     color: #ffffff; /* Color del texto */
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 24px; /* Tamaño del texto */
@@ -49,9 +54,49 @@ header, img {
     box-shadow: 0 0 20px #f2cd2d, 0 0 40px #f3ff89; /* Efecto de resplandor */
     transition: background 0.3s, box-shadow 0.3s; /* Transiciones suaves */
     z-index: 2; /* Asegura que el botón esté encima de las partículas */
+    text-decoration: none; /* Quita el subrayado */
 }
 
 .mi-boton:hover {
     background-color: #1b0e22; /* Color al pasar el mouse */
     box-shadow: 0 0 30px rgba(0, 255, 255, 0.7), 0 0 60px rgba(0, 255, 255, 0.7); /* Efecto de resplandor más intenso */
 }
+
+/* Transición de fondo */
+.background-transition {
+    animation: changeBackground 1s forwards;
+}
+
+/* Definir la animación del cambio de fondo */
+@keyframes changeBackground {
+    0% {
+        background-color: #040469; /* Color inicial */
+    }
+    100% {
+        background-color: #1b0e22; /* Color al que cambiará */
+    }
+}
+
+/* Estilos de la animación de Pacman */
+.pacman-animation {
+    visibility: hidden; /* Mantener oculto inicialmente */
+    opacity: 0; /* Invisibilidad completa */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Asegura que esté encima de todo */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrado horizontal */
+    background-color: transparent; /* Fondo transparente */
+    transition: visibility 0.5s, opacity 0.5s; /* Transiciones suaves para visibilidad */
+}
+
+/* Pacman GIF */
+.pacman-gif {
+    width: 100px; /* Tamaño del GIF de Pacman */
+    height: auto; /* Mantener la proporción */
+    z-index: 10000; /* Asegurar que esté encima de los puntos */
+}
+
