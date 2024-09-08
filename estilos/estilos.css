@@ -6,13 +6,30 @@ html, body {
     overflow: hidden; /* Evitar scroll inesperado */
 }
 
-header, img {
-    z-index: 3; /* Asegura que el logo esté encima de las partículas */
-    position: absolute; /* Posiciona el logo de forma absoluta */
-    top: 10px; /* Ajusta la distancia desde la parte superior */
-    left: 10px; /* Ajusta la distancia desde la izquierda */
-    height: 50px;
-    width: 50px;
+/* Contenedor para el logo y el texto */
+.logo-texto {
+    display: flex; /* Alinear elementos en fila */
+    align-items: center; /* Centrar verticalmente */
+    position: fixed; /* Posición fija en la página */
+    top: 10px; /* Distancia desde la parte superior */
+    left: 10px; /* Distancia desde la parte izquierda */
+    margin: 0; /* Sin margen adicional */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    background-color: transparent; /* Fondo transparente para el contenedor */
+}
+
+/* Estilo para el logo */
+.logo-texto img {
+    height: 73px; /* Ajusta el tamaño del logo */
+    margin-right: 15px; /* Espacio entre el logo y el texto */
+}
+
+/* Estilo para el texto */
+.logo-texto h3 {
+    margin: 0; /* Quitar margen del encabezado */
+    font-family: 'Domine', serif;
+    color: #ffffff; /* Ajustar color del texto */
+    font-size: 20px;
 }
 
 /* Contenedor de fondo */
@@ -47,9 +64,8 @@ header, img {
     outline: none;
     background-color: transparent; /* Fondo transparente */
     color: #ffffff; /* Color del texto */
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 24px; /* Tamaño del texto */
-    text-transform: uppercase; /* Texto en mayúsculas */
+    font-family: 'Domine', serif;
+    font-size: 30px; /* Tamaño del texto */
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
     box-shadow: 0 0 20px #f2cd2d, 0 0 40px #f3ff89; /* Efecto de resplandor */
     transition: background 0.3s, box-shadow 0.3s; /* Transiciones suaves */
@@ -97,6 +113,5 @@ header, img {
 .pacman-gif {
     width: 100px; /* Tamaño del GIF de Pacman */
     height: auto; /* Mantener la proporción */
-    z-index: 10000; /* Asegurar que esté encima de los puntos */
 }
 

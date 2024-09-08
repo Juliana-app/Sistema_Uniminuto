@@ -4,6 +4,6 @@ document.querySelector(".mi-boton").addEventListener("click", function (e) {
 
     // Redireccionar después de 1 segundo (duración de la animación)
     setTimeout(function () {
-        window.location.href = "paginas/inicio.html";
+        window.location.href = "formularioLogin.html";
     }, 2000);
 });

@@ -3,10 +3,14 @@ document.querySelector(".mi-boton").addEventListener("click", function (e) {
 
     const boton = document.querySelector(".mi-boton");
     const pacmanAnimation = document.querySelector(".pacman-animation");
+    const logo = document.querySelector(".logo-texto"); // Corregido: Añadido el punto para seleccionar la clase
 
     // Cambiar el texto del botón a "Cargando..." y ocultar el botón
     boton.textContent = "Cargando...";
     boton.style.visibility = "hidden";  // Ocultar el botón usando visibility
+    
+    // Ocultar el logo y el texto
+    logo.style.visibility = "hidden"; // Corregido: Ocultar el contenedor del logo y el texto
 
     // Mostrar la animación de Pacman y los puntos
     pacmanAnimation.style.visibility = "visible";  // Mostrar el contenedor de Pacman
@@ -17,19 +21,12 @@ document.querySelector(".mi-boton").addEventListener("click", function (e) {
     // Transición de fondo
     document.body.classList.add("background-transition");
 
-    // Animación de desaparición de los puntos de comida después de 0.5 segundos
-    setTimeout(function () {
-        document.querySelectorAll(".punto").forEach(function(punto) {
-            punto.style.animation = "desaparecer 1.5s ease-in-out forwards";  // Aplicar animación de desaparición
-        });
-    }, 1000);
-
-    // Redirigir después de 1 segundo y luego ocultar Pacman
+    // Redirigir después de 5 segundos y luego ocultar Pacman
     setTimeout(function () {
         pacmanAnimation.style.visibility = "hidden";  // Ocultar el contenedor de Pacman
         pacmanAnimation.style.opacity = "0";  // Asegurar que esté oculto
         console.log("Pacman oculto");  // Debugging: Confirmar que el Pacman sea oculto
-        window.location.href = "paginas/inicio.html";
+        window.location.href = "paginas/formularioLogin.html";
     }, 5000);
 });
 
