@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Fizz Buzz</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Sono:wght@200;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilos/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos/bootstrap-icons.css">
+    <link rel="stylesheet" href="estilos/owl.carousel.min.css">
+    <link rel="stylesheet" href="estilos/owl.theme.default.min.css">
+    <link href="estilos/templatemo-pod-talk.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand me-lg-5 me-0" href="index.html">
+                    <img src="imgs/logo.png" class="logo-image img-fluid" alt="Logo Uniminuto">
+                </a>
+
+                <form action="#" method="get" class="custom-form search-form flex-fill me-3" role="search">
+                    <div class="input-group input-group-lg">
+                        <input name="search" type="search" class="form-control" id="search" placeholder="Search"
+                            aria-label="Search">
+
+                        <button type="submit" class="form-control" id="submit">
+                            <i class="bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                <li><a class="dropdown-item" href="listing-page.html">Listing Page</a></li>
+
+                                <li><a class="dropdown-item active" href="detail-page.html">Detail Page</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="ms-4">
+                        <a href="#section_2" class="btn custom-btn custom-border-btn smoothscroll">Get started</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <header class="site-header d-flex flex-column justify-content-center align-items-center">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12 text-center">
+
+                        <h2 class="mb-0">Secuencia de Fibonacci</h2>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+
+        <section class="latest-podcast-section section-padding pb-0" id="section_2">
+            <div class="container">
+                <div class="row justify-content-center">
+
+                    <div class="col-lg-10 col-12">
+                        <div class="section-title-wrap mb-5">
+                            <h4 class="section-title">¿En que consiste?</h4>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 col-12">
+                                <div class="custom-block-icon-wrap">
+                                    <div class="custom-block-image-wrap custom-block-image-detail-page">
+                                        <img src="imgs/fibonacci.png" class="custom-block-image img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-9 col-12">
+                                <div class="custom-block-info">
+                                    <div class="custom-block-top d-flex mb-1">
+                                        <small class="me-4">
+                                            <a href="#">
+                                                <i class="bi-play"></i>
+                                                Medio
+                                            </a>
+                                        </small>
+
+                                        <small>
+                                            <i class="bi-clock-fill custom-icon"></i>
+                                            20 Minutos
+                                        </small>
+
+                                        <small class="ms-auto">Reto <span class="badge">01</span></small>
+                                    </div>
+
+                                    <p>
+                                        /*<br>
+                                        * Escribe un programa que imprima los 50 primeros números de la sucesión<br>
+                                        * de Fibonacci empezando en 0.<br>
+                                        * - La serie Fibonacci se compone por una sucesión de números en<br>
+                                        * la que el siguiente siempre es la suma de los dos anteriores.<br>
+                                        * 0, 1, 1, 2, 3, 5, 8, 13...<br>
+                                        */
+                                    </p>
+
+                                    <div
+                                        class="profile-block profile-detail-block d-flex flex-wrap align-items-center mt-5">
+                                        <div class="d-flex mb-3 mb-lg-0 mb-md-0">
+                                            <p>
+                                                <strong>Ver solución</strong>
+                                            </p>
+                                        </div>
+
+                                        <ul class="social-icon ms-lg-auto ms-md-auto">
+                                            <li class="social-icon-item">
+                                                <a href="https://github.com/mouredev/Weekly-Challenge-2022-Kotlin/blob/main/app/src/main/java/com/mouredev/weeklychallenge2022/Challenge2.kt"
+                                                    class="social-icon-link bi-github"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="related-podcast-section section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12">
+                        <div class="section-title-wrap mb-5">
+                            <h4 class="section-title">Retos similares</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-12 mb-4 mb-lg-0">
+                        <div class="custom-block custom-block-full">
+                            <div class="custom-block-image-wrap">
+                                <a href="detail-page.html">
+                                    <img src="imgs/pilas.jpg" class="custom-block-image img-fluid" alt="">
+                                </a>
+                            </div>
+
+                            <div class="custom-block-info">
+                                <h5 class="mb-2">
+                                    <a href="detail-page.html">
+                                        Pilas y colas
+                                    </a>
+                                </h5>
+
+                                <div class="profile-block d-flex">
+                                    <img src="imgs/lengProgra.jpg" class="profile-block-image img-fluid" alt="">
+
+                                    <p>Lenguaje
+                                        <strong>Phyton</strong>
+                                    </p>
+                                </div>
+
+                                <p class="mb-0">
+                                    /*<br>
+                                    * Implementa los mecanismos de introducción y recuperación de elementos propios de
+                                    las
+                                    pilas (stacks - LIFO) y las colas (queue - FIFO) utilizando una estructura de array
+                                    o lista (dependiendo de las posibilidades de tu lenguaje).<br>
+                                    <strong>* DIFICULTAD EXTRA (opcional):</strong><br>
+                                    Utilizando la implementación de pila y cadenas de texto, simula el mecanismo
+                                    adelante/atrás
+                                    de un navegador web. Crea un programa en el que puedas navegar a una página o
+                                    indicarle
+                                    que te quieres desplazar adelante o atrás, mostrando en cada caso el nombre de la
+                                    web.
+                                    Las palabras "adelante", "atrás" desencadenan esta acción, el resto se interpreta
+                                    como
+                                    el nombre de una nueva web.
+                                    * Utilizando la implementación de cola y cadenas de texto, simula el mecanismo de
+                                    una
+                                    impresora compartida que recibe documentos y los imprime cuando así se le indica.
+                                    La palabra "imprimir" imprime un elemento de la cola, el resto de palabras se
+                                    interpretan como nombres de documentos.<br>
+                                    */
+                                </p>
+
+                                <div
+                                    class="profile-block profile-detail-block d-flex flex-wrap align-items-center mt-5">
+                                    <div class="d-flex mb-3 mb-lg-0 mb-md-0">
+                                        <p>
+                                            <strong>Ver solución</strong>
+                                        </p>
+                                    </div>
+
+                                    <ul class="social-icon ms-lg-auto ms-md-auto">
+                                        <li class="social-icon-item">
+                                            <a href="https://github.com/mouredev/roadmap-retos-programacion/blob/main/Roadmap/07%20-%20PILAS%20Y%20COLAS/python/mouredev.py"
+                                                class="social-icon-link bi-github"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="social-share d-flex flex-column ms-auto">
+                                <a href="#" class="badge ms-auto">
+                                    <i class="bi-heart"></i>
+                                </a>
+
+                                <a href="#" class="badge ms-auto">
+                                    <i class="bi-bookmark"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-12 mb-4 mb-lg-0">
+                        <div class="custom-block custom-block-full">
+                            <div class="custom-block-image-wrap">
+                                <a href="detail-page.html">
+                                    <img src="imgs/caracteres.png" class="custom-block-image img-fluid" alt="">
+                                </a>
+                            </div>
+
+                            <div class="custom-block-info">
+                                <h5 class="mb-2">
+                                    <a href="detail-page.html">
+                                        Cadena de carácteres
+                                    </a>
+                                </h5>
+
+                                <div class="profile-block d-flex">
+                                    <img src="imgs/lengProgra.jpg" class="profile-block-image img-fluid" alt="">
+
+                                    <p>Lenguaje
+                                        <strong>Python</strong>
+                                    </p>
+                                </div>
+
+                                <p class="mb-0">
+                                    /*<br>
+                                    * Muestra ejemplos de todas las operaciones que puedes realizar con cadenas de
+                                    caracteres del lenguaje Python. Algunas de esas operaciones podrían ser (busca todas
+                                    las que
+                                    puedas):<br>
+                                    * Acceso a caracteres específicos, subcadenas, longitud, concatenación,
+                                    repetición,<br>
+                                    * recorrido, conversión a mayúsculas y minúsculas, reemplazo, división, unión,
+                                    interpolación, verificación...<br>
+                                    <strong>* DIFICULTAD EXTRA (opcional):</strong><br>
+                                    * Crea un programa que analice dos palabras diferentes y realice comprobaciones
+                                    * para descubrir si son:<br>
+                                    * - Palíndromos<br>
+                                    * - Anagramas<br>
+                                    * - Isogramas<br>
+                                    */<br>
+                                </p>
+
+                                <div
+                                    class="profile-block profile-detail-block d-flex flex-wrap align-items-center mt-5">
+                                    <div class="d-flex mb-3 mb-lg-0 mb-md-0">
+                                        <p>
+                                            <strong>Ver solución</strong>
+                                        </p>
+                                    </div>
+
+                                    <ul class="social-icon ms-lg-auto ms-md-auto">
+                                        <li class="social-icon-item">
+                                            <a href="https://github.com/mouredev/roadmap-retos-programacion/blob/main/Roadmap/04%20-%20CADENAS%20DE%20CARACTERES/python/mouredev.py"
+                                                class="social-icon-link bi-github"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="social-share d-flex flex-column ms-auto">
+                                <a href="#" class="badge ms-auto">
+                                    <i class="bi-heart"></i>
+                                </a>
+
+                                <a href="#" class="badge ms-auto">
+                                    <i class="bi-bookmark"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-12">
+                        <div class="custom-block custom-block-full">
+                            <div class="custom-block-image-wrap">
+                                <a href="detail-page.html">
+                                    <img src="imgs/regular.png" class="custom-block-image img-fluid" alt="">
+                                </a>
+                            </div>
+
+                            <div class="custom-block-info">
+                                <h5 class="mb-2">
+                                    <a href="detail-page.html">
+                                        Expresiones regulares
+                                    </a>
+                                </h5>
+
+                                <div class="profile-block d-flex">
+                                    <img src="imgs/lengProgra.jpg" class="profile-block-image img-fluid" alt="">
+
+                                    <p>Lenguaje
+                                        <strong>Python</strong>
+                                    </p>
+                                </div>
+
+                                <p class="mb-0">
+                                    /*<br>
+                                    * Utilizando Python, explora el concepto de expresiones regulares,
+                                    * creando una que sea capaz de encontrar y extraer todos los números
+                                    * de un texto.
+                                    <strong>* DIFICULTAD EXTRA (opcional):</strong><br>
+                                    * Crea 3 expresiones regulares (a tu criterio) capaces de:<br>
+                                    * - Validar un email.<br>
+                                    * - Validar un número de teléfono.<br>
+                                    * - Validar una url.<br>
+                                    */
+                                </p>
+
+                                <div
+                                    class="profile-block profile-detail-block d-flex flex-wrap align-items-center mt-5">
+                                    <div class="d-flex mb-3 mb-lg-0 mb-md-0">
+                                        <p>
+                                            <strong>Ver solución</strong>
+                                        </p>
+                                    </div>
+
+                                    <ul class="social-icon ms-lg-auto ms-md-auto">
+                                        <li class="social-icon-item">
+                                            <a href="https://github.com/mouredev/roadmap-retos-programacion/blob/main/Roadmap/16%20-%20EXPRESIONES%20REGULARES/python/mouredev.py"
+                                                class="social-icon-link bi-github"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="social-share d-flex flex-column ms-auto">
+                                <a href="#" class="badge ms-auto">
+                                    <i class="bi-heart"></i>
+                                </a>
+
+                                <a href="#" class="badge ms-auto">
+                                    <i class="bi-bookmark"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                    <div class="subscribe-form-wrap">
+                        <h6>¡Suscribete a nuestro Newsletter!</h6>
+
+                        <form class="custom-form subscribe-form" action="#" method="get" role="form">
+                            <input type="email" name="subscribe-email" id="subscribe-email" pattern="[^ @]*@[^ @]*"
+                                class="form-control" placeholder="Email Address" required="">
+
+                            <div class="col-lg-12 col-12">
+                                <button type="submit" class="form-control" id="submit">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-md-0 mb-lg-0">
+                    <h6 class="site-footer-title mb-3">Contacto</h6>
+
+                    <p class="mb-2"><strong class="d-inline me-2">En Bogotá:</strong>6015933004</p>
+
+                    <p>
+                        <strong class="d-inline me-2">Línea nacional gratuita:</strong>01 8000 11 93 90
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12">
+
+                    <h6 class="site-footer-title mb-3">Social</h6>
+
+                    <ul class="social-icon">
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-instagram"></a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-twitter"></a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-whatsapp"></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container pt-5">
+            <div class="row align-items-center">
+
+                <div class="col-lg-2 col-md-3 col-12">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="imgs/logo.png" class="logo-image img-fluid" alt="Logo Uniminuto">
+                    </a>
+                </div>
+
+                <div class="col-lg-7 col-md-9 col-12">
+                    <ul class="site-footer-links">
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Homepage</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Browse episodes</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Help Center</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-12">
+                    <p class="copyright-text mb-0">Copyright © 2024 Minuto de Dios
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
