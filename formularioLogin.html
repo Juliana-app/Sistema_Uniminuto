@@ -36,7 +36,9 @@
                 </div>
                 <div class="form-inputs">
                     <div class="input-box">
-                        <input type="text" id="loginUsername" class="input-field" placeholder="Username" required>
+                        <input type="text" id="loginUsername" class="input-field" placeholder="Username"
+                            pattern="[A-Za-z0-9]+" title="El nombre de usuario solo puede contener letras y números"
+                            required>
                         <i class="bx bx-user icon"></i>
                         <div id="loginUsernameError" class="error-message"></div>
                         <!-- Mensaje de error para el nombre de usuario -->
